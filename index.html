@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MG fitxperience, Coach sportive · Fribourg à Fribourg</title>
+<meta name="description" content="MG fitxperience : coaching sportif personnalisé avec Marianne à Fribourg. Reprise d’activité, technique, retour au sport. Du lundi au vendredi.">
+<meta property="og:title" content="MG fitxperience, Coach sportive · Fribourg à Fribourg">
+<meta property="og:description" content="MG fitxperience : coaching sportif personnalisé avec Marianne à Fribourg. Reprise d’activité, technique, retour au sport. Du lundi au vendredi.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f6f0e7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23211a15%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2222%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2218%22%20fill%3D%22%23f6f0e7%22%20text-anchor%3D%22middle%22%3EM%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"MG fitxperience","telephone":"+41796588734","address":{"@type":"PostalAddress","streetAddress":"Rte du Château-d'Affry 6, 1700 Fribourg","addressLocality":"Fribourg"},"sameAs":[]}</script>
+<style>
+/* Monograph template · palette and fonts chosen per business (see content.json) */
+:root {
+  --bg: #f6f0e7; --paper: #fffdf9; --alt: #efe5d6; --ink: #211a15; --muted: #6a5f55; --line: #e0d3c1; --accent: #a8482a;
+  --display: 'Fraunces', Georgia, serif; --text: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif; --dw: 600; --track: -0.02em;
+  --wrap: 1280px; --gutter: clamp(20px, 5vw, 56px); --sec: clamp(80px, 11vw, 160px); --ease: cubic-bezier(.16, 1, .3, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--text); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+svg { width: 1.05em; height: 1.05em; flex: none; }
+::selection { background: var(--ink); color: var(--bg); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto; }
+.skip { position: absolute; left: -9999px; top: 8px; z-index: 100; background: var(--paper); padding: 10px 14px; }
+.skip:focus { left: 8px; }
+h1, h2, h3 { font-family: var(--display); font-weight: var(--dw); letter-spacing: var(--track); margin: 0; line-height: 1.02; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+.label { font-size: .74rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+.rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; font-weight: 600; text-decoration: none; border: 1px solid var(--ink); transition: background .25s, color .25s; }
+.btn-solid { background: var(--ink); color: var(--bg); }
+.btn-line { color: var(--ink); }
+@media (hover: hover) { .btn-solid:hover { background: var(--accent); border-color: var(--accent); color: #fff; } .btn-line:hover { background: var(--ink); color: var(--bg); } }
+
+/* Header: centred wordmark between the menu and the phone */
+.head { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+.head-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 74px; gap: 20px; }
+.head nav { display: flex; gap: 26px; }
+.head nav a, .head .tel { text-decoration: none; font-size: .9rem; letter-spacing: .04em; min-height: 44px; display: inline-flex; align-items: center; }
+.head nav a:hover, .head .tel:hover { color: var(--accent); }
+.wordmark { font-family: var(--display); font-weight: var(--dw); font-size: 1.4rem; letter-spacing: var(--track); text-decoration: none; text-align: center; line-height: 1.1; min-height: 44px; display: inline-flex; align-items: center; }
+.head .tel { justify-self: end; gap: 8px; font-weight: 600; }
+.menu-btn { display: none; width: 46px; height: 46px; border: 0; background: none; justify-self: start; align-items: center; justify-content: center; cursor: pointer; color: inherit; }
+.menu-btn svg { width: 24px; height: 24px; }
+@media (max-width: 860px) {
+  .head nav { display: none; } .menu-btn { display: inline-flex; }
+  .head-row { height: 62px; } .head .tel span { display: none; }
+  .head .tel { width: 46px; justify-content: center; }
+}
+.drawer { position: fixed; inset: 0; z-index: 60; background: var(--bg); padding: 16px var(--gutter) 36px; display: flex; flex-direction: column; transform: translateY(-100%); visibility: hidden; transition: transform .45s var(--ease); }
+.drawer.open { transform: none; visibility: visible; }
+.drawer-top { display: flex; justify-content: space-between; align-items: center; height: 46px; }
+.drawer nav { display: grid; margin: 36px 0 auto; border-top: 1px solid var(--line); }
+.drawer nav a { font-family: var(--display); font-weight: var(--dw); font-size: 2.1rem; letter-spacing: var(--track); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.drawer .actions { display: grid; gap: 10px; }
+.drawer .btn { justify-content: center; }
+
+/* Hero: the headline first, then the wide photograph */
+.hero { padding-top: clamp(28px, 4.5vw, 64px); }
+/* Desktop: headline beside the intro and buttons, the photo right under them (it shows in the first screen).
+   Phones: label, headline, photo, then intro and buttons. */
+.hero-grid { display: grid; grid-template-columns: 1fr minmax(260px, 360px); grid-template-areas: "label label" "title side" "photo photo"; column-gap: clamp(28px, 4vw, 64px); }
+.hero .label { grid-area: label; margin-bottom: 18px; display: block; }
+.hero h1 { grid-area: title; font-size: clamp(2.8rem, 6.6vw, 6.6rem); max-width: 14ch; }
+.hero-side { grid-area: side; align-self: end; display: grid; gap: 22px; padding-bottom: 8px; }
+.hero-side p { font-size: clamp(1.02rem, 1.3vw, 1.15rem); color: var(--muted); }
+.hero-photo { grid-area: photo; margin-top: clamp(26px, 3.4vw, 44px) !important; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; grid-template-areas: "label" "title" "photo" "side"; }
+  .hero-photo { margin-top: 22px !important; }
+  .hero-side { padding-top: 22px; }
+}
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-photo { margin: 0; }
+.hero-photo .frame { aspect-ratio: 16 / 9; overflow: hidden; background: var(--alt); }
+.hero-photo.narrow { width: min(100%, 980px); margin-left: auto; }
+.hero-photo.narrow .frame { aspect-ratio: 16 / 10; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; animation: reveal 1.4s var(--ease) both; }
+.hero-photo figcaption { display: flex; justify-content: space-between; gap: 16px; padding-top: 12px; font-size: .88rem; color: var(--muted); }
+@keyframes reveal { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@media (max-width: 760px) {
+
+  .hero-photo .frame, .hero-photo.narrow .frame { aspect-ratio: 4 / 3.4; }
+}
+
+/* Facts: an index line */
+.facts { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); margin-top: clamp(48px, 6vw, 80px); border-top: 1px solid var(--ink); }
+.facts div { padding: 20px 24px 0 0; }
+.facts b { display: block; font-family: var(--display); font-weight: var(--dw); font-size: clamp(1.4rem, 2.4vw, 2rem); letter-spacing: var(--track); line-height: 1.1; }
+.facts span { color: var(--muted); font-size: .95rem; }
+@media (max-width: 760px) { .facts { grid-template-columns: 1fr; } .facts div { padding: 16px 0; border-bottom: 1px solid var(--line); } }
+
+.sec { padding-block: var(--sec); }
+.sec-grid { display: grid; grid-template-columns: 4fr 8fr; gap: clamp(28px, 5vw, 80px); }
+.sec-grid > header { align-self: start; position: sticky; top: 110px; }
+.sec h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); }
+.sec-head p { margin-top: 18px; color: var(--muted); max-width: 34ch; }
+@media (max-width: 860px) { .sec-grid { grid-template-columns: 1fr; } .sec-grid > header { position: static; } }
+
+/* Services: a numbered index */
+.index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.index li { display: grid; grid-template-columns: 3.2rem 1fr auto; gap: 18px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.index .n { font-family: var(--display); color: var(--accent); font-size: 1.05rem; }
+.index h3 { font-size: clamp(1.4rem, 2.4vw, 2rem); }
+.index p { color: var(--muted); margin-top: 6px; font-size: 1rem; }
+.index .thumb { width: clamp(100px, 12vw, 168px); aspect-ratio: 1; overflow: hidden; background: var(--alt); }
+.index .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+@media (hover: hover) { .index li:hover .thumb img { transform: scale(1.06); } }
+
+/* Projects: offset rows like a printed portfolio */
+.work { background: var(--paper); }
+.projects { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(28px, 4vw, 56px) clamp(16px, 2vw, 32px); }
+.projects li { grid-column: span 7; }
+.projects li:nth-child(4n+2) { grid-column: 9 / span 4; margin-top: 18%; }
+.projects li:nth-child(4n+3) { grid-column: 2 / span 5; }
+.projects li:nth-child(4n+4) { grid-column: 7 / span 6; margin-top: 10%; }
+.projects li:last-child:nth-child(odd) { grid-column: 3 / span 8; }
+.p-item { display: block; width: 100%; border: 0; padding: 0; background: none; cursor: zoom-in; text-align: left; color: inherit; font: inherit; }
+.p-item .frame { aspect-ratio: 4 / 3; overflow: hidden; background: var(--alt); }
+.projects li:nth-child(4n+2) .frame { aspect-ratio: 4 / 5; }
+.p-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease); }
+.p-cap { display: flex; gap: 14px; padding-top: 12px; font-size: .92rem; }
+.p-cap .n { color: var(--accent); font-family: var(--display); }
+@media (hover: hover) { .p-item:hover img { transform: scale(1.03); } }
+@media (max-width: 760px) {
+  .projects { grid-template-columns: 1fr; }
+  .projects li, .projects li:nth-child(n) { grid-column: auto !important; margin-top: 0 !important; }
+  .projects li:nth-child(4n+2) .frame { aspect-ratio: 4 / 3; }
+}
+.ba { position: relative; margin: 0 0 clamp(40px, 5vw, 72px); aspect-ratio: 16 / 9; overflow: hidden; background: var(--alt); user-select: none; }
+.ba-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ba-before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.ba-tag { position: absolute; top: 16px; z-index: 2; padding: 6px 12px; background: var(--bg); color: var(--ink); font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; }
+.ba-tag-b { left: 16px; } .ba-tag-a { right: 16px; }
+.ba-line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 1px; background: #fff; z-index: 2; pointer-events: none; }
+.ba-line i { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: var(--bg); color: var(--ink); display: flex; align-items: center; justify-content: center; }
+.ba-line svg { width: 15px; height: 15px; }
+.ba-range { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; z-index: 3; margin: 0; }
+.ba:focus-within .ba-line i { outline: 2px solid var(--accent); }
+.ba figcaption { position: absolute; left: 16px; bottom: 14px; z-index: 2; color: #fff; text-shadow: 0 1px 10px rgba(0, 0, 0, .6); font-size: .95rem; }
+@media (max-width: 760px) { .ba { aspect-ratio: 4 / 3; } }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(28px, 6vw, 96px); align-items: center; }
+.about-grid .frame { aspect-ratio: 4 / 5; overflow: hidden; background: var(--alt); }
+.about-grid img { width: 100%; height: 100%; object-fit: cover; }
+.about-grid p { font-family: var(--display); font-size: clamp(1.4rem, 2.6vw, 2.2rem); line-height: 1.3; letter-spacing: var(--track); margin-top: 18px; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } .about-grid .frame { aspect-ratio: 4 / 3; } }
+
+/* Reviews: one large quote, the others in a quiet row */
+.quote { margin: 0; max-width: 980px; }
+.quote .stars { color: var(--accent); margin-bottom: 26px; display: inline-flex; gap: 3px; }
+.quote p { font-family: var(--display); font-weight: var(--dw); font-size: clamp(1.8rem, 3.8vw, 3.2rem); line-height: 1.18; letter-spacing: var(--track); }
+.quote figcaption { margin-top: 24px; font-size: .95rem; color: var(--muted); }
+.quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(24px, 4vw, 56px); margin-top: clamp(48px, 6vw, 80px); padding-top: 32px; border-top: 1px solid var(--line); }
+.quotes figure { margin: 0; }
+.quotes p { font-size: 1.08rem; }
+.quotes figcaption { margin-top: 12px; font-size: .9rem; color: var(--muted); }
+.more { display: inline-flex; align-items: center; gap: 8px; margin-top: 36px; min-height: 44px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--ink); }
+@media (max-width: 760px) { .quotes { grid-template-columns: 1fr; } }
+
+/* Contact */
+.contact { background: var(--alt); padding-block: var(--sec); }
+.contact h2 { font-size: clamp(2.2rem, 5vw, 4.2rem); max-width: 16ch; }
+.contact .lead { margin-top: 18px; color: var(--muted); max-width: 40ch; font-size: 1.1rem; }
+.phone { display: inline-block; margin: clamp(32px, 4vw, 48px) 0 28px; font-family: var(--display); font-weight: var(--dw); letter-spacing: var(--track); font-size: clamp(2.6rem, 8vw, 6.4rem); line-height: 1; text-decoration: none; white-space: nowrap; }
+.phone:hover { color: var(--accent); }
+.info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin: clamp(48px, 6vw, 72px) 0 0; padding-top: 24px; border-top: 1px solid var(--ink); }
+.info dt { font-size: .74rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
+.info dd { margin: 0; display: grid; gap: 4px; }
+.info dd b { font-weight: 600; display: inline-block; min-width: 7em; }
+.info a { min-height: 44px; display: inline-flex; align-items: center; gap: 6px; }
+@media (max-width: 760px) { .info { grid-template-columns: 1fr; } .phone { font-size: clamp(2.2rem, 11vw, 3.4rem); } }
+.foot { padding-block: 26px 32px; font-size: .88rem; color: var(--muted); }
+.foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.foot a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.call-fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 40; display: none; align-items: center; gap: 8px; min-height: 52px; padding: 0 20px; background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 600; box-shadow: 0 12px 30px rgba(0, 0, 0, .25); transform: translateY(120px); transition: transform .4s var(--ease); }
+.call-fab.show { transform: none; }
+@media (max-width: 860px) { .call-fab { display: inline-flex; } }
+.lightbox { border: 0; padding: 0; width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; background: var(--bg); color: var(--ink); }
+.lightbox::backdrop { background: var(--bg); }
+.lb-inner { width: 100%; height: 100%; display: grid; grid-template-rows: auto 1fr auto; padding: 14px; }
+.lb-top { display: flex; justify-content: flex-end; }
+.lb-img { min-height: 0; display: flex; align-items: center; justify-content: center; }
+.lb-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.lb-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; }
+.lb-btn { width: 48px; height: 48px; border: 1px solid var(--line); background: none; color: inherit; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.lb-cap { font-size: .95rem; color: var(--muted); text-align: center; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+<!--sf:preview--><meta name="robots" content="noindex, nofollow"><!--/sf:preview-->
+<!--sf:og--><meta property="og:image" content="https://mg-fitxperience-fribourg.aymenjallouli.dev/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://mg-fitxperience-fribourg.aymenjallouli.dev/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://mg-fitxperience-fribourg.aymenjallouli.dev/og.jpg"><!--/sf:og-->
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<!--nocount--><header class="head" id="head">
+  <div class="wrap head-row">
+    <nav aria-label="Menu"><a href="#services">Services</a><a href="#work">En séance</a><a href="#reviews">Avis</a><a href="#contact">Contact</a></nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    <a class="wordmark" href="#top">MG fitxperience</a>
+    <a class="tel" href="tel:+41796588734" aria-label="Appeler"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>079 658 87 34</span></a>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top"><span class="wordmark">MG fitxperience</span><button class="menu-btn" type="button" data-close aria-label="Fermer" style="display:inline-flex"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+  <nav aria-label="Menu"><a href="#services" data-close>Services</a><a href="#work" data-close>En séance</a><a href="#reviews" data-close>Avis</a><a href="#contact" data-close>Contact</a></nav>
+  <div class="actions">
+      <a class="btn btn-solid" href="tel:+41796588734"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Appeler</span></a>
+      
+      <a class="btn btn-line" href="sms:+41796588734?&amp;body=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Envoyer un SMS</span></a></div>
+</div>
+<!--/nocount--><main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+      <span class="label">Coach sportive · Fribourg</span>
+      <h1>Avec Marianne, aucune séance ne se ressemble</h1>
+      <div class="hero-side">
+        <p>Coaching sportif individuel à Fribourg, construit selon vos objectifs et votre forme du jour.</p>
+        <div class="actions">
+      <a class="btn btn-solid" href="tel:+41796588734"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Appeler</span></a>
+      
+      <a class="btn btn-line" href="sms:+41796588734?&amp;body=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Envoyer un SMS</span></a></div>
+      </div>
+      <figure class="hero-photo narrow">
+        <div class="frame"><img src="assets/photos/photo-05.jpg" alt="Marianne guide une cliente au tirage à la poulie" style="object-position:50% 38%" fetchpriority="high" decoding="async" sizes="100vw"></div>
+        <figcaption><span>Marianne guide une cliente au tirage à la poulie</span><a href="https://www.google.com/maps/place/?q=place_id:ChIJv4iE3olvjkcRhQIne7wawC8" target="_blank" rel="noopener"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg></span> 5,0 · 15 avis Google</a></figcaption>
+      </figure>
+      </div>
+      <div class="facts" style="--n:3"><div><b>5,0 sur 5</b><span>15 avis Google</span></div><div><b>Lun – ven</b><span>séances de 7 h à 20 h</span></div><div><b>Parking</b><span>accessible en fauteuil roulant</span></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="wrap sec-grid">
+      <header class="sec-head"><span class="label">Coaching</span><h2>Adapté chaque semaine à votre forme</h2></header>
+      <ol class="index">
+        <li><span class="n">01</span><div><h3>Coaching individuel</h3><p>Séances revues chaque semaine selon vos progrès.</p></div><span></span></li>
+        <li><span class="n">02</span><div><h3>Reprise en douceur</h3><p>Après une maladie ou une pause, retrouver force et confiance.</p></div><span></span></li>
+        <li><span class="n">03</span><div><h3>Retour à votre sport</h3><p>Récupérer vos capacités physiques pour votre discipline.</p></div><span></span></li>
+        <li><span class="n">04</span><div><h3>Technique et posture</h3><p>Bien s’entraîner, sur machines comme en charges libres.</p></div><span></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec work" id="work">
+    <div class="wrap">
+      <header class="sec-head" style="margin-bottom:clamp(40px,5vw,72px)"><span class="label">En séance</span><h2>Dans la salle avec Marianne</h2></header>
+      
+      <ul class="projects">
+        <li><button class="p-item" type="button" data-i="0" aria-label="Agrandir la photo : Tirage à la poulie, posture corrigée">
+          <div class="frame"><img src="assets/photos/photo-04.jpg" alt="Tirage à la poulie, posture corrigée" style="object-position:50% 28%" loading="lazy" decoding="async" sizes="(min-width: 860px) 55vw, 100vw"></div>
+          <span class="p-cap"><span class="n">01</span><span>Tirage à la poulie, posture corrigée</span></span>
+        </button></li>
+        <li><button class="p-item" type="button" data-i="1" aria-label="Agrandir la photo : Placement du tronc avant l’effort">
+          <div class="frame"><img src="assets/photos/photo-06.jpg" alt="Placement du tronc avant l’effort" style="object-position:45% 62%" loading="lazy" decoding="async" sizes="(min-width: 860px) 55vw, 100vw"></div>
+          <span class="p-cap"><span class="n">02</span><span>Placement du tronc avant l’effort</span></span>
+        </button></li>
+        <li><button class="p-item" type="button" data-i="2" aria-label="Agrandir la photo : Port de charge, Core Bag">
+          <div class="frame"><img src="assets/photos/photo-02.jpg" alt="Port de charge, Core Bag" style="object-position:50% 30%" loading="lazy" decoding="async" sizes="(min-width: 860px) 55vw, 100vw"></div>
+          <span class="p-cap"><span class="n">03</span><span>Port de charge, Core Bag</span></span>
+        </button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap about-grid">
+      <div class="frame"><img src="assets/photos/photo-01.jpg" alt="Marianne, souriante, entre deux exercices" style="object-position:60% 50%" loading="lazy" decoding="async" sizes="(min-width: 860px) 40vw, 100vw"></div>
+      <div><span class="label">Marianne</span><p>Elle corrige chaque geste et adapte la charge à votre énergie du jour, sans jamais juger.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <hr class="rule" style="margin-bottom:var(--sec)">
+      <figure class="quote">
+        <div role="img" aria-label="Noté 5 sur 5"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.1 6.5 20l1.1-6.1L3.1 9.5l6.2-.9z" fill="currentColor"/></svg></span></div>
+        <blockquote style="margin:0"><p>«&nbsp;Après mon cancer, j’étais perdue … Elle m’a aidée à retrouver confiance en mon corps, à reprendre des forces.&nbsp;»</p></blockquote>
+        <figcaption>Nadia V.</figcaption>
+      </figure>
+      <div class="quotes"><figure><blockquote style="margin:0"><p>«&nbsp;Elle allie parfaitement rigueur et bonne humeur … On se sent soutenu, encouragé, et surtout, jamais jugé.&nbsp;»</p></blockquote><figcaption>Melanie R.</figcaption></figure><figure><blockquote style="margin:0"><p>«&nbsp;Elle motive, innove, aucune séance ne se ressemble, le temps passe vite avec de beaux résultats…&nbsp;»</p></blockquote><figcaption>Manu S.</figcaption></figure></div>
+      <a class="more" href="https://www.google.com/maps/place/?q=place_id:ChIJv4iE3olvjkcRhQIne7wawC8" target="_blank" rel="noopener">Voir les 15 avis sur Google <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="label">Premier contact</span>
+      <h2 style="margin-top:14px">Parlons de vos objectifs</h2>
+      <p class="lead">Dites-lui où vous en êtes et ce que vous visez.</p>
+      <a class="phone" href="tel:+41796588734">079 658 87 34</a>
+      <div class="actions">
+      <a class="btn btn-solid" href="tel:+41796588734"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Appeler</span></a>
+      
+      <a class="btn btn-line" href="sms:+41796588734?&amp;body=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Envoyer un SMS</span></a></div>
+      <dl class="info">
+        <div><dt>Horaires</dt><dd><span><b>Lun – Ven</b> 7 h – 20 h</span><span><b>Sam – Dim</b> fermé</span></dd></div>
+        
+        <div><dt>Adresse</dt><dd>Rte du Château-d&#39;Affry 6, 1700 Fribourg<a href="https://www.google.com/maps/dir/?api=1&amp;destination=MG%20fitxperience%2C%20Rte%20du%20Ch%C3%A2teau-d&#39;Affry%206%2C%201700%20Fribourg" target="_blank" rel="noopener">Itinéraire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap"><span>© <span id="year">2026</span> MG fitxperience · Fribourg</span><span></span></div></footer>
+<a class="call-fab" href="tel:+41796588734"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Appeler</span></a>
+<dialog class="lightbox" id="lb" aria-label="Réalisations"><div class="lb-inner">
+  <div class="lb-top"><button class="lb-btn" type="button" data-lb="close" aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+  <div class="lb-img"><img alt=""></div>
+  <div class="lb-bar"><button class="lb-btn" type="button" data-lb="prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><span class="lb-cap"></span><button class="lb-btn" type="button" data-lb="next" aria-label="Photo suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+</div></dialog>
+<script>
+(function () {
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var fab = document.querySelector('.call-fab'), hero = document.getElementById('top');
+  function onScroll() { if (fab) fab.classList.toggle('show', window.scrollY > (hero ? hero.offsetHeight * .6 : 400)); }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  var drawer = document.getElementById('drawer'), openBtn = document.querySelector('.head .menu-btn');
+  function setMenu(open) {
+    drawer.classList.toggle('open', open); drawer.setAttribute('aria-hidden', String(!open));
+    openBtn.setAttribute('aria-expanded', String(open)); document.body.style.overflow = open ? 'hidden' : '';
+    if (!open) openBtn.focus();
+  }
+  openBtn.addEventListener('click', function () { setMenu(true); });
+  drawer.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && drawer.classList.contains('open')) setMenu(false); });
+  document.querySelectorAll('.ba').forEach(function (ba) { var r = ba.querySelector('.ba-range'); r.addEventListener('input', function () { ba.style.setProperty('--pos', r.value + '%'); }); });
+  var lb = document.getElementById('lb');
+  if (lb && lb.showModal) {
+    var items = Array.prototype.slice.call(document.querySelectorAll('.p-item')), cur = 0, im = lb.querySelector('.lb-img img'), cap = lb.querySelector('.lb-cap');
+    function show(i) { cur = (i + items.length) % items.length; var s = items[cur].querySelector('img'); im.src = s.getAttribute('src'); im.alt = s.alt; cap.textContent = s.alt; }
+    items.forEach(function (b, i) { b.addEventListener('click', function () { show(i); lb.showModal(); }); });
+    lb.addEventListener('click', function (e) { var a = e.target.closest('[data-lb]'); if (!a) return; if (a.dataset.lb === 'close') lb.close(); else show(cur + (a.dataset.lb === 'next' ? 1 : -1)); });
+    lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') show(cur + 1); if (e.key === 'ArrowLeft') show(cur - 1); });
+  }
+})();
+</script>
+<!--sf:preview--><div style="padding:18px 16px;font:13px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;background:#0f0f10;color:#a3a3a8">Aperçu réalisé par Aymen Jallouli pour MG fitxperience : ce site n'est pas encore le site officiel de l'établissement.</div><!--/sf:preview-->
+</body>
+</html>
